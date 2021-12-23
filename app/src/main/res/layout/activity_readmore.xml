@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_back"
+        android:onClick="backBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_readMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="한눈에 보기"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+
+    <TextView
+        android:id="@+id/baseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_readMore" />
+
+    <TextView
+        android:id="@+id/title_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="184dp"
+        android:text="총 계"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_num"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_total" />
+
+    <TextView
+        android:id="@+id/total_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+
+        android:text="전일대비 "
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/total_num"
+        app:layout_constraintTop_toBottomOf="@+id/title_total" />
+
+    <TextView
+        android:id="@+id/total_before_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/total_before"
+        app:layout_constraintTop_toBottomOf="@+id/title_total" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:background="#616161"
+        app:layout_constraintTop_toBottomOf="@+id/total_num" />
+
+    <TextView
+        android:id="@+id/release_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="격리해제"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/release_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/release_total" />
+
+    <TextView
+        android:id="@+id/release_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:text="전일대비 "
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/release_num"
+        app:layout_constraintTop_toBottomOf="@+id/release_total" />
+
+    <TextView
+        android:id="@+id/release_before_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/release_before"
+        app:layout_constraintTop_toBottomOf="@+id/release_total" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:background="#616161"
+        app:layout_constraintTop_toBottomOf="@+id/release_num" />
+    <TextView
+        android:id="@+id/isolate_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="격리 중"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/isolate_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isolate_total" />
+
+    <TextView
+        android:id="@+id/isolate_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:text="전일대비 "
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/isolate_num"
+        app:layout_constraintTop_toBottomOf="@+id/isolate_total" />
+
+    <TextView
+        android:id="@+id/isolate_before_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/isolate_before"
+        app:layout_constraintTop_toBottomOf="@+id/isolate_total" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:background="#616161"
+        app:layout_constraintTop_toBottomOf="@+id/isolate_num" />
+    <TextView
+        android:id="@+id/rip_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="사망"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/rip_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rip_total" />
+
+    <TextView
+        android:id="@+id/rip_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:text="전일대비 "
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/rip_num"
+        app:layout_constraintTop_toBottomOf="@+id/rip_total" />
+
+    <TextView
+        android:id="@+id/rip_before_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#F39800"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/rip_before"
+        app:layout_constraintTop_toBottomOf="@+id/rip_total" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:background="#616161"
+        app:layout_constraintTop_toBottomOf="@+id/rip_num" />
+
+    <Button
+        android:id="@+id/btn_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn_kobus"
+        android:text="선별 진료소 알아보기"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="hospitalBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.46"
+        tools:layout_editor_absoluteX="-30dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
